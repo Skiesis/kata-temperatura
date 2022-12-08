@@ -6,7 +6,7 @@ function round(num: number): number {
 export class Temperature {
     constructor(
         public temp: number,
-        public readonly scale: "F" | "C" | "K"
+        public scale: "F" | "C" | "K"
     ) {
         if (temp <= 0 && scale == "K")
         throw new Error("Kelvin can't be zero or less");
